@@ -19,4 +19,13 @@ public class StringCalculatorTest {
 		
 		Assert.assertEquals(0, result);
 	}
+	
+	@Test
+	public void Run_NumberString_ReturnsNumber()
+	{
+		StringCalculator calculator = new StringCalculator();
+		int result = calculator.run("1");
+		
+		Assert.assertEquals(1, result);
+	}
 }
